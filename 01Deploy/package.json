@@ -1,0 +1,17 @@
+{
+  "name": "01deploy",
+  "version": "1.0.0",
+  "description": "A basic app to deploy",
+  "license": "ISC",
+  "author": "Ayush Rawat",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
