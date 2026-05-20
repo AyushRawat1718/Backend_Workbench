@@ -24,8 +24,9 @@ const orderSchema = new mongoose.Schema(
     orderItems: {
       type: [
         {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "orderItemSchema",
+          // Here we have not used ObjectId because orderItems stores complete order item data,while ObjectId is used when we only store ids/references.
+          type: orderItemSchema,
+          required: true,
         },
       ],
       //   type:[orderItemSchema] //That could have been done like this also
