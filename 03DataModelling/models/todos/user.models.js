@@ -24,4 +24,5 @@ const userSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
+// Timestamps: true, gives two additional columns named as createdAt and updatedAt
 export const User = mongoose.model("User", userSchema);
